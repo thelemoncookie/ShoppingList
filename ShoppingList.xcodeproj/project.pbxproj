@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		D2C4138A1CD580D00064E572 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C413891CD580D00064E572 /* AppDelegate.swift */; };
-		D2C4138C1CD580D00064E572 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4138B1CD580D00064E572 /* ViewController.swift */; };
+		D2C4138C1CD580D00064E572 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4138B1CD580D00064E572 /* MainViewController.swift */; };
 		D2C4138F1CD580D00064E572 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C4138D1CD580D00064E572 /* Main.storyboard */; };
 		D2C413911CD580D00064E572 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D2C413901CD580D00064E572 /* Assets.xcassets */; };
 		D2C413941CD580D00064E572 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2C413921CD580D00064E572 /* LaunchScreen.storyboard */; };
 		D2C4139F1CD580D10064E572 /* ShoppingListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C4139E1CD580D10064E572 /* ShoppingListTests.swift */; };
 		D2C413AA1CD580D10064E572 /* ShoppingListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C413A91CD580D10064E572 /* ShoppingListUITests.swift */; };
+		D2C413B81CD593960064E572 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C413B71CD593960064E572 /* SecondVC.swift */; };
+		D2C413BA1CD5ABA40064E572 /* SecondVCTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2C413B91CD5ABA40064E572 /* SecondVCTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		D2C413861CD580D00064E572 /* ShoppingList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C413891CD580D00064E572 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D2C4138B1CD580D00064E572 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D2C4138B1CD580D00064E572 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		D2C4138E1CD580D00064E572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D2C413901CD580D00064E572 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D2C413931CD580D00064E572 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		D2C413A51CD580D10064E572 /* ShoppingListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2C413A91CD580D10064E572 /* ShoppingListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListUITests.swift; sourceTree = "<group>"; };
 		D2C413AB1CD580D10064E572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2C413B71CD593960064E572 /* SecondVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
+		D2C413B91CD5ABA40064E572 /* SecondVCTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondVCTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,10 +101,12 @@
 		D2C413881CD580D00064E572 /* ShoppingList */ = {
 			isa = PBXGroup;
 			children = (
-				D2C413891CD580D00064E572 /* AppDelegate.swift */,
-				D2C4138B1CD580D00064E572 /* ViewController.swift */,
-				D2C4138D1CD580D00064E572 /* Main.storyboard */,
 				D2C413901CD580D00064E572 /* Assets.xcassets */,
+				D2C4138B1CD580D00064E572 /* MainViewController.swift */,
+				D2C413B71CD593960064E572 /* SecondVC.swift */,
+				D2C413B91CD5ABA40064E572 /* SecondVCTableViewCell.swift */,
+				D2C413891CD580D00064E572 /* AppDelegate.swift */,
+				D2C4138D1CD580D00064E572 /* Main.storyboard */,
 				D2C413921CD580D00064E572 /* LaunchScreen.storyboard */,
 				D2C413951CD580D00064E572 /* Info.plist */,
 			);
@@ -259,7 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C4138C1CD580D00064E572 /* ViewController.swift in Sources */,
+				D2C4138C1CD580D00064E572 /* MainViewController.swift in Sources */,
+				D2C413B81CD593960064E572 /* SecondVC.swift in Sources */,
+				D2C413BA1CD5ABA40064E572 /* SecondVCTableViewCell.swift in Sources */,
 				D2C4138A1CD580D00064E572 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,6 +495,7 @@
 				D2C413B01CD580D10064E572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2C413B11CD580D10064E572 /* Build configuration list for PBXNativeTarget "ShoppingListTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +504,7 @@
 				D2C413B31CD580D10064E572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D2C413B41CD580D10064E572 /* Build configuration list for PBXNativeTarget "ShoppingListUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +513,7 @@
 				D2C413B61CD580D10064E572 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
